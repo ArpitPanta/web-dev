@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 24px;
+            background: #f4f1ea;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            width: min(100%, 1400px);
+            margin: 0 auto;
+        }
+        .image-grid img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            border: 4px solid #ffffff;
+            object-fit: cover;
+            box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+        }
+
+        @media (min-width: 768px) {
+            .image-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .image-grid {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+        }
+    </style>
+    <title>Responsive Image Gallery</title>
+</head>
+<body>
+    <main>
+        <h1>Responsive Image Gallery</h1>
+        <div class="image-grid">
+            <img src="./images/IMG.png" alt="Gallery image 1">
+            <img src="./images/IMG2.png" alt="Gallery image 2">
+            <img src="./images/IMG3.png" alt="Gallery image 3">
+            <img src="./images/IMG4.png" alt="Gallery image 4">
+            <img src="./images/IMG5.png" alt="Gallery image 5">
+            <img src="./images/IMG6.png" alt="Gallery image 6">
+            <img src="./images/IMG7.png" alt="Gallery image 7">
+            <img src="./images/IMG8.png" alt="Gallery image 8">
+            <img src="./images/IMG9.png" alt="Gallery image 9">
+            <img src="./images/IMG10.png" alt="Gallery image 10">
+        </div>
+    </main>
+</body>
+</html>
