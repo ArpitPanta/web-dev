@@ -77,7 +77,7 @@ let age = prompt("Enter your age: ");
 let text = (age < 18) ? "You are a minor." : "You are an adult.";
 console.log(text);
 alert(text);
-*/
+
 let day;
 let date = new Date().getDay();
 
@@ -108,3 +108,33 @@ switch (date) {
     break;
 }
 alert("Today is " + day);
+
+for (let i = 0; i < 10; i++) {
+    console.log("The value of i is " + i);
+}
+
+for (let i = 0; i < 10; i++) {
+    console.log("The value of i is " + i);
+}
+for (let i = 1; i <= 10; i++) {
+    console.log(`2 * ${i} = ${2 * i}`);
+}
+
+for (let i = 1; i <= 10; i++) {
+    if (i == 5)continue;
+    console.log(`2 * ${i} = ${2 * i}`);
+}
+
+let i = 1;
+while (i <= 10) {
+    console.log(`2 * ${i} = ${2 * i}`);
+    i++;
+}
+*/
+let fruits = ["apple", "banana", "mango"];
+console.log(fruits[0]);
+console.log(fruits.length);
+fruits.push("orange");
+for (let i = 0; i < fruits.length; i++) {
+   console.log(fruits[i]);
+}
