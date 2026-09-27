@@ -130,7 +130,7 @@ while (i <= 10) {
     console.log(`2 * ${i} = ${2 * i}`);
     i++;
 }
-*/
+
 let fruits = ["apple", "banana", "mango"];
 console.log(fruits[0]);
 console.log(fruits.length);
@@ -138,3 +138,20 @@ fruits.push("orange");
 for (let i = 0; i < fruits.length; i++) {
    console.log(fruits[i]);
 }
+
+let fruits = ["apple", "banana", "mango"];
+//console.log(fruits[0]);
+fruits.shift();
+fruits.unshift("orange");
+for (let i = 0; i < fruits.length; i++) {
+   console.log(fruits[i]);
+}
+const mygirls = ["sita", "gita", "laxmi"];
+const myboys = ["ram", "shyam", "hari"];
+// mygirls.concat(myboys);
+const mychildren = [...mygirls, ...myboys,"arpit","kaustuv"];
+document.getElementById("demo").innerHTML = mychildren;
+const citrus = fruits.slice(1, 3);
+console.log(citrus);
+  */
+

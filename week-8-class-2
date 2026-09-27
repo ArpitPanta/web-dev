@@ -4,6 +4,11 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div id ="main"></div>
+        <script>
+            const main = document.getElementById("main");
+            console.log(main);
+            main.innerHTML = "hello world";
+        </script>
 </body>
 </html>
